@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto;
+    background: #8E0E00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #8E0E00, #1F1C18);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #8E0E00, #1F1C18);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+button {
+   display: block;
+   margin: 20px auto;
+   font-size: 20px;
+   text-transform: uppercase;
+   padding: 10px 50px;
+   border: 2px solid #000000;
+   border-radius: 3px;
+   background-color: #AD133A;
+   font: 17px Arial;
+   color: #FFFFFF;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+button:hover {
+    background-color: #4c2827;
+    border: 2px solid #666666;
+}
+
+button:active {
+    background-color: #AD133A;
+    opacity: 0.8; 
+}
+
+p::first-letter {
+    text-transform: uppercase;
+}
+
+select {
+    font-size: 20px;
+    width: 75%;
+    padding: 15px 5px;
+    border: 2px solid #999999;
+    border-radius: 5px;
+}
+
+select:focus {
+    border: 2px solid #000000;
+}
+
+.container {
+    background: #FFFFFF;
+    border-radius: 20px;
+    min-height: 60vh;
+    min-width: 30vw;
+}
+
+.container > h1 {
+    color: #FFFFFF;
+    background-color: #000000;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    font-weight: 200;
+}
+
+.calculator {
+    width: 85%;
+    margin: auto;
+}
+
+.calculator p {
+    margin: 20px 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    margin-left: 10px;
+    width: 70%;
+    font-size: 18px;
+    padding: 5px;
+    border: 3px solid #999999;
+    color: #FF0000;
+    outline: 0;
+    border-radius: 3px;
+
+}
+
+input[type=number]:focus {
+    border: 3px solid #388ad6;
+}
+
+
+#people-amt {
+    margin-left: 0;
+}
+
+
+#total-tip h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+#total-tip{
+    text-align: center;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#total-tip sup, span {
+    font-size: 30px;
+}
+
+#total-tip p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#total-tip p::first-letter {
+    text-transform: lowercase;
+}
